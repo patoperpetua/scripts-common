@@ -10,7 +10,7 @@ test:
   before_script:
     - apk add --no-cache bash
   script:
-    - ./src/bash_script_test.sh
+    - ./src/bash_script_test_standalone.sh
 
 pages:
   stage: deploy
