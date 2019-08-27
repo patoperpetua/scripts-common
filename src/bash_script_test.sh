@@ -20,4 +20,4 @@ __root="$(cd "$(dirname "${__dir}")" && pwd)"
 echo "Script name:${__base}"
 echo "Executing at ${__root}"
 
-eval "${__dir}/common_test.sh" -b=shellcheck "$@"
+eval "${__dir}/bash_common.sh" -b=shellcheck "$@"

@@ -20,10 +20,12 @@ pages:
       else
         export TARGET_FOLDER=public/${CI_COMMIT_REF_NAME};
       fi
+    - apk add --no-cache bash zip
   script:
     - rm -rf "${TARGET_FOLDER}"
     - mkdir -p "${TARGET_FOLDER}"
     - cp -r src/* "${TARGET_FOLDER}"
+    - ./src/zip_files.sh
   artifacts:
     paths:
       - public
