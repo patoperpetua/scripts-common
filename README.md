@@ -54,6 +54,16 @@ It can be downloaded by:
 curl -o bash_script_test_standalone.sh -L https://singletonsd.gitlab.io/scripts/common/latest/bash_script_test_standalone.sh
 ```
 
+## DOWLOAD
+
+All scripts are available also inside a zip file under [this url](https://singletonsd.gitlab.io/scripts/common/latest/scripts.zip). Or you can execute the following to download:
+
+```bash
+mkdir -p binaries && \
+curl -o binaries/scripts.zip -L https://singletonsd.gitlab.io/scripts/common/latest/scripts.zip && \
+cd binaries && unzip scripts.zip && mv src/* . && rm -r src && rm -r scripts.zip && cd ..
+```
+
 ## STRUCTURE
 
 Master branch is setup as latest folder. To use an specific version, put the version name before the file name like:
@@ -72,7 +82,7 @@ https://singletonsd.gitlab.io/scripts/common/v0.0.2/bash_script_test_standalone.
 
 - [X] Fix documentation.
 - [X] Add script to download test script from gitlab pages.
-- [ ] Zip all scripts and put inside pages.
+- [X] Zip all scripts and put inside pages.
 
 ----------------------
 
