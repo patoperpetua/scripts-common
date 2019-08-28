@@ -53,7 +53,6 @@ set -o errexit
 if [ -d "scripts" ]; then
     ./.git/hooks/${SCRIPT_NAME} -o=scripts
 fi
-./.git/hooks/${SCRIPT_NAME} -o=.gitlab-ci.yml
 EOF
     chmod +x "${BASE_FOLDER}pre-commit"
 else
