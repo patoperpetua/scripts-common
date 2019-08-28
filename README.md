@@ -64,6 +64,14 @@ curl -o binaries/scripts.zip -L https://singletonsd.gitlab.io/scripts/common/lat
 cd binaries && unzip scripts.zip && mv src/* . && rm -r src && rm -r scripts.zip && cd ..
 ```
 
+## GIT HOOK
+
+You can setup shellcheck to be run before a commit. To do that just execute the following script under your git repository:
+
+```bash
+curl -s https://singletonsd.gitlab.io/scripts/common/latest/bash_script_test_hook_installer.sh | bash /dev/stdin
+```
+
 ## STRUCTURE
 
 Master branch is setup as latest folder. To use an specific version, put the version name before the file name like:
@@ -83,6 +91,7 @@ https://singletonsd.gitlab.io/scripts/common/v0.0.2/bash_script_test_standalone.
 - [X] Fix documentation.
 - [X] Add script to download test script from gitlab pages.
 - [X] Zip all scripts and put inside pages.
+- [X] Create a docker image with all scripts inside.
 
 ----------------------
 
