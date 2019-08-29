@@ -54,6 +54,16 @@ It can be downloaded by:
 curl -o bash_script_test_standalone.sh -L https://singletonsd.gitlab.io/scripts/common/latest/bash_script_test_standalone.sh
 ```
 
+### COMMON HOOK INSTALLER
+
+Script to install gitlab-ci checker and script checker as a git hook type pre-commit. It is use for common git projects that contains bash scripts and gitlab-ci.
+
+It can be downloaded by:
+
+```bash
+curl -o common_hook_installer.sh -L https://singletonsd.gitlab.io/scripts/common/latest/common_hook_installer.sh
+```
+
 ## DOWNLOAD
 
 All scripts are available also inside a zip file under [this url](https://singletonsd.gitlab.io/scripts/common/latest/scripts.zip). Or you can execute the following to download:

@@ -61,8 +61,6 @@ if [ ! -f "${BASE_FOLDER}pre-commit" ]; then
 #Exit when a command fails.
 set -o errexit
 
-./.git/hooks/${SCRIPT_NAME_S}
-
 if [ -d "scripts" ]; then
     ./.git/hooks/${SCRIPT_NAME_S} -o=scripts
 fi
