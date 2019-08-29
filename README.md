@@ -2,7 +2,7 @@
 
 This project contains common Linux bash scripts.
 
-> The **main repository** is hosted in [gitlab.com/singletonsd/scripts/common](https://gitlab.com/singletonsd/scripts/common.git) but it is automaticaly mirrored to [github.com/singletonsd](https://github.com/singletonsd/common.git), [github.com/patoperpetua](https://github.com/patoperpetua/scripts-common.git) and to [gitlab.com/patoperpetua](https://gitlab.com/patoperpetua/scripts-common.git). If you are in the Github page it may occur that is not updated to the last version.
+> The **main repository** is hosted in [gitlab.com/singletonsd/scripts/common](https://gitlab.com/singletonsd/scripts/common.git) but it is automaticaly mirrored to [github.com/singletonsd](https://github.com/singletonsd/scripts-common.git), [github.com/patoperpetua](https://github.com/patoperpetua/scripts-common.git) and to [gitlab.com/patoperpetua](https://gitlab.com/patoperpetua/scripts-common.git). If you are in the Github page it may occur that is not updated to the last version.
 
 ## AVAILABLE SCRIPTS
 
@@ -54,7 +54,7 @@ It can be downloaded by:
 curl -o bash_script_test_standalone.sh -L https://singletonsd.gitlab.io/scripts/common/latest/bash_script_test_standalone.sh
 ```
 
-## DOWLOAD
+## DOWNLOAD
 
 All scripts are available also inside a zip file under [this url](https://singletonsd.gitlab.io/scripts/common/latest/scripts.zip). Or you can execute the following to download:
 
@@ -91,7 +91,7 @@ https://singletonsd.gitlab.io/scripts/common/v0.0.2/bash_script_test_standalone.
 - [X] Fix documentation.
 - [X] Add script to download test script from gitlab pages.
 - [X] Zip all scripts and put inside pages.
-- [X] Create a docker image with all scripts inside.
+- [ ] Create a docker image with all scripts inside.
 
 ----------------------
 
