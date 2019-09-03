@@ -56,12 +56,34 @@ curl -o bash_script_test_standalone.sh -L https://singletonsd.gitlab.io/scripts/
 
 ### COMMON HOOK INSTALLER
 
-Script to install gitlab-ci checker and script checker as a git hook type pre-commit. It is use for common git projects that contains bash scripts and gitlab-ci.
+Script to install gitlab-ci checker and script checker as a git hook type pre-commit. It is use for *common* git projects that contains bash scripts and gitlab-ci.
 
 It can be downloaded by:
 
 ```bash
 curl -o common_hook_installer.sh -L https://singletonsd.gitlab.io/scripts/common/latest/common_hook_installer.sh
+```
+
+Or it can be installed in a repository by:
+
+```bash
+curl -s https://singletonsd.gitlab.io/scripts/common/latest/common_hook_installer.sh | bash /dev/stdin
+```
+
+### BASH SCRIPT HOOK INSTALLER
+
+Script to install gitlab-ci checker and script checker as a git hook type pre-commit. It is use for *scripts * git projects that contains bash scripts and gitlab-ci.
+
+It can be downloaded by:
+
+```bash
+curl -o bash_script_hook_installer.sh -L https://singletonsd.gitlab.io/scripts/common/latest/bash_script_hook_installer.sh
+```
+
+Or it can be installed in a repository by:
+
+```bash
+curl -s https://singletonsd.gitlab.io/scripts/common/latest/bash_script_hook_installer.sh | bash /dev/stdin
 ```
 
 ## DOWNLOAD
