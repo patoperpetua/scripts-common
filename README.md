@@ -30,7 +30,7 @@ curl -o bash_common.sh -L https://singletonsd.gitlab.io/scripts/common/latest/ba
 
 ### BASH SCRIPT TEST
 
-It tests bash script file(s) using shellcheck. It depennds on common script, so to use it you need to have both in the same directory. It contains the following options:
+It tests bash script file(s) using shellcheck. It depends on common script, so to use it you need to have both in the same directory. It contains the following options:
 
 ```bash
 -h | --help: display help.
@@ -46,7 +46,7 @@ curl -o bash_script_test.sh -L https://singletonsd.gitlab.io/scripts/common/late
 
 #### BASH SCRIPT TEST STANDALONE
 
-It is the same script as bash script test but it contains everythin in one file.
+It is the same script as bash script test but it contains everything in one file.
 
 It can be downloaded by:
 
@@ -72,7 +72,7 @@ curl -s https://singletonsd.gitlab.io/scripts/common/latest/common_hook_installe
 
 ### BASH SCRIPT HOOK INSTALLER
 
-Script to install gitlab-ci checker and script checker as a git hook type pre-commit. It is use for *scripts * git projects that contains bash scripts and gitlab-ci.
+Script to install gitlab-ci checker and script checker as a git hook type pre-commit. It is use for *scripts* git projects that contains bash scripts and gitlab-ci.
 
 It can be downloaded by:
 
