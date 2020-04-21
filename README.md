@@ -76,10 +76,20 @@ cd binaries && unzip scripts.zip && mv src/* . && rm -r src && rm -r scripts.zip
 
 ## GIT HOOK
 
-You can setup shellcheck to be run before a commit. To do that just execute the following script under your git repository:
+### BASH PROJECTS
+
+For those projects that are bash based, you can setup shellcheck to be run before a commit. To do that just execute the following script under your git repository:
 
 ```bash
 curl -s https://singletonsd.gitlab.io/scripts/common/latest/bash_script_test_hook_installer.sh | bash /dev/stdin
+```
+
+### COMMON PROJECTS
+
+For those projects that have bash scripts and/or make use of gitlab ci/cd but its main language is other than bash, you can setup shellcheck to be run before a commit. To do that just execute the following script under your git repository:
+
+```bash
+curl -s https://singletonsd.gitlab.io/scripts/common/latest/bash_script_common_hook_installer.sh | bash /dev/stdin
 ```
 
 ## STRUCTURE
