@@ -2,7 +2,7 @@
 
 This project contains common Linux bash scripts.
 
-> The **main repository** is hosted in [gitlab.com/singletonsd/scripts/common](https://gitlab.com/singletonsd/scripts/common.git) but it is automaticaly mirrored to [github.com/singletonsd](https://github.com/singletonsd/scripts-common.git), [github.com/patoperpetua](https://github.com/patoperpetua/scripts-common.git) and to [gitlab.com/patoperpetua](https://gitlab.com/patoperpetua/scripts-common.git). If you are in the Github page it may occur that is not updated to the last version.
+> The **main repository** is hosted in [gitlab.com/singletonsd/scripts/common](https://gitlab.com/singletonsd/scripts/common.git) but it is automatically mirrored to [github.com/singletonsd](https://github.com/singletonsd/scripts-common.git), [github.com/patoperpetua](https://github.com/patoperpetua/scripts-common.git) and to [gitlab.com/patoperpetua](https://gitlab.com/patoperpetua/scripts-common.git). If you are in the Github page it may occur that is not updated to the last version.
 
 ## AVAILABLE SCRIPTS
 
@@ -30,7 +30,7 @@ curl -o bash_common.sh -L https://singletonsd.gitlab.io/scripts/common/latest/ba
 
 ### BASH SCRIPT TEST
 
-It tests bash script file(s) using shellcheck. It depennds on common script, so to use it you need to have both in the same directory. It contains the following options:
+It tests bash script file(s) using shellcheck. It depends on common script, so to use it you need to have both in the same directory. It contains the following options:
 
 ```bash
 -h | --help: display help.
@@ -46,7 +46,7 @@ curl -o bash_script_test.sh -L https://singletonsd.gitlab.io/scripts/common/late
 
 #### BASH SCRIPT TEST STANDALONE
 
-It is the same script as bash script test but it contains everythin in one file.
+It is the same script as bash script test but it contains everything in one file.
 
 It can be downloaded by:
 
@@ -56,12 +56,34 @@ curl -o bash_script_test_standalone.sh -L https://singletonsd.gitlab.io/scripts/
 
 ### COMMON HOOK INSTALLER
 
-Script to install gitlab-ci checker and script checker as a git hook type pre-commit. It is use for common git projects that contains bash scripts and gitlab-ci.
+Script to install gitlab-ci checker and script checker as a git hook type pre-commit. It is use for *common* git projects that contains bash scripts and gitlab-ci.
 
 It can be downloaded by:
 
 ```bash
 curl -o common_hook_installer.sh -L https://singletonsd.gitlab.io/scripts/common/latest/common_hook_installer.sh
+```
+
+Or it can be installed in a repository by:
+
+```bash
+curl -s https://singletonsd.gitlab.io/scripts/common/latest/common_hook_installer.sh | bash /dev/stdin
+```
+
+### BASH SCRIPT HOOK INSTALLER
+
+Script to install gitlab-ci checker and script checker as a git hook type pre-commit. It is use for *scripts* git projects that contains bash scripts and gitlab-ci.
+
+It can be downloaded by:
+
+```bash
+curl -o bash_script_hook_installer.sh -L https://singletonsd.gitlab.io/scripts/common/latest/bash_script_hook_installer.sh
+```
+
+Or it can be installed in a repository by:
+
+```bash
+curl -s https://singletonsd.gitlab.io/scripts/common/latest/bash_script_hook_installer.sh | bash /dev/stdin
 ```
 
 ## DOWNLOAD
