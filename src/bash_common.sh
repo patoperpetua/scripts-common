@@ -36,7 +36,9 @@ function execute(){
         if [ -d "${SINGLE_FILE}" ]; then
             execute "${SINGLE_FILE}"
         else
-        eval "$BINARY_NAME $SINGLE_FILE"
+            if [[ "$SINGLE_FILE" == *".sh" ]];then
+                eval "$BINARY_NAME $SINGLE_FILE"
+            fi
         fi
     done
 }
