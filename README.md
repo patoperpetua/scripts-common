@@ -30,7 +30,7 @@ curl -o bash_common.sh -L https://singletonsd.gitlab.io/scripts/common/latest/ba
 
 ### BASH SCRIPT TEST
 
-It tests bash script file(s) using shellcheck. It depends on common script, so to use it you need to have both in the same directory. It contains the following options:
+It tests bash script file(s) using shellcheck. It depends on common script, so to use it you need to have both in the same directory. Shellcheck must be installed in the host computer, follow [this link to install](https://github.com/koalaman/shellcheck#installing) (It contains the following options:
 
 ```bash
 -h | --help: display help.
