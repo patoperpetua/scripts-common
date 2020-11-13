@@ -17,9 +17,7 @@ __file="${__dir}/$(basename "${BASH_SOURCE[0]}")"
 __base="$(basename "${__file}" .sh)"
 __root="$(cd "$(dirname "${__dir}")" && pwd)"
 
-echo "Script name: ${__base}"
-echo "Executing at ${__root}"
-
+VERSION="1.0.0"
 BINARY_NAME=
 
 SRC_FOLDER="src"
@@ -28,6 +26,19 @@ function usage(){
     echo -e "-b | --binary: binary to execute."
     echo -e "-h | --help: display help."
     echo -e "-o | --only: the name of the file or folder to test."
+}
+
+function execute(){
+    shopt -s dotglob
+    for SINGLE_FILE in "${1}"/*
+    do
+        echo "Checking ${SINGLE_FILE}..."
+        if [ -d "${SINGLE_FILE}" ]; then
+            execute "${SINGLE_FILE}"
+        else
+        eval "$BINARY_NAME $SINGLE_FILE"
+        fi
+    done
 }
 
 while [ "${1+x}" != "" ]; do
@@ -44,6 +55,10 @@ while [ "${1+x}" != "" ]; do
         -o | --only)
             SRC_FOLDER=$VALUE
             ;;
+        -v | --version)
+            echo $VERSION
+            exit
+            ;;
         *)
             echo "ERROR: unknown parameter \"$PARAM\""
             usage
@@ -52,6 +67,9 @@ while [ "${1+x}" != "" ]; do
     esac
     shift
 done
+
+echo "Script name: ${__base}"
+echo "Executing at ${__root}"
 
 if [ "${BINARY_NAME}" == "" ]; then
     echo "ERROR: Binary name not provided"
@@ -66,10 +84,5 @@ fi
 if [ -f "${SRC_FOLDER}" ]; then
     eval "$BINARY_NAME ${SRC_FOLDER}"
 else
-    shopt -s dotglob
-    for SINGLE_FILE in "${SRC_FOLDER}"/*
-    do
-        echo "Checking ${SINGLE_FILE}..."
-        eval "$BINARY_NAME $SINGLE_FILE"
-    done
+    execute "${SRC_FOLDER}"
 fi
